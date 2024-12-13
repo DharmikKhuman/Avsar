@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="title">
+        <img src="AVSAR Poster-03.png" alt="">
+    </div>
+    <div class="nav">
+      <!-- Bootstrap Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Avsar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="gov.html">Government</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="worker_location.html">Un-organized Workers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="meal_location.html">Meal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://eshram.gov.in/indexmain">E-Sharam.Gov</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="subcription.html">Subscription</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Logout</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </div>
+
+  <!-- Main Content -->
+    <!-- Carousel Section -->
+    <div id="carouselExampleIndicators" class="carousel slide mt-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Avsar.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Avsar</h5>
+            </div>
+          </div>
+        
+          <div class="carousel-item active">
+            <img src="slider2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>New Income</h5>
+                <!-- <p>Description for slide 2.</p> -->
+            </div>
+          </div>
+            <div class="carousel-item">
+                <img src="slider3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Job Generation</h5>
+                    <!-- <p>Description for slide 3.</p> -->
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p class="lead">We are committed to providing high-quality services to people who in need by helping un-organized worker who hardly has any income.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <div class="row text-center">
+                <h2>Our Services</h2>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Government Schemes</h5>
+                            <p class="card-text">We provide quick links for government schemes for unorganized workers and meal kit workers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Un-Organized Workers</h5>
+                            <p class="card-text">We try to generate work force for people who are not able to find work or hardly has any income.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Meal-kit</h5>
+                            <p class="card-text">We try to generate work force for people who are not able to find work or hardly has any income.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p class="lead">Feel free to reach out to us for more information.</p>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

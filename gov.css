@@ -1,0 +1,167 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title Section */
+.title {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.title img {
+    width: 100%; /* Full width */
+    height: 50%; /* Maintain aspect ratio */
+    display: block; /* Remove any gaps below the image */
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    background: linear-gradient(90deg, #0056b3, #007bff);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    color: white;
+    font-size: 16px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #d1ecf1;
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: white !important;
+}
+
+/* Sidebar Styling */
+.main_nav {
+    background-color: #f8f9fa;
+    border-right: 2px solid #e0e0e0;
+    padding: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.main_nav .btn {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.main_nav .btn:hover {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Content Section */
+.section-heading {
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    font-weight: bold; /* Bold text */
+    color: #007bff; /* Match the primary theme color */
+    text-transform: uppercase; /* Optional: Make the text uppercase */
+    border-bottom: 3px solid #007bff; /* Underline for emphasis */
+    padding-bottom: 10px; /* Spacing below the text */
+    margin-bottom: 20px; /* Spacing before the cards start */
+}
+
+.content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    min-height: calc(100vh - 70px); /* Adjust for title/navbar height */
+}
+
+.content .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 15px;
+    max-height: 380px; /* Restrict card height */
+}
+
+.content .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.content .card img {
+    height: 150px; /* Adjusted image height */
+    object-fit: cover;
+}
+
+.content .card-body {
+    overflow: hidden;
+}
+
+.content .card-title {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.content .btn-primary {
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-sidebar-btn {
+    width: 200px; /* Fixed width for consistency */
+    text-align: center; /* Center-align text */
+    font-weight: bold; /* Make text bolder */
+    border-radius: 10px; /* Smooth corners */
+    transition: all 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover effect for buttons */
+.custom-sidebar-btn:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main_nav {
+        display: none; /* Hide sidebar on smaller devices */
+    }
+
+    .content {
+        padding: 5px;
+    }
+
+    .navbar .nav-link {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+    .content .card-body {
+        height: auto; /* Ensures content fits within card height */
+        overflow: hidden;
+    }
+}
+
+

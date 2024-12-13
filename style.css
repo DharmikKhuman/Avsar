@@ -1,0 +1,589 @@
+/* Home */
+
+/* Main Content Styling */
+.content {
+    padding: 20px;
+    background-color: #f9f9f9; /* Soft background for contrast */
+    min-height: calc(100vh - 70px); /* Ensure the content spans the viewport */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+}
+
+/* Section Heading Styling */
+.section-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center; /* Center-align the heading */
+}
+
+/* Card Styling */
+.card {
+    flex: 1 1 300px; /* Responsive card width */
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff; /* Card background */
+    margin: 15px; /* Spacing between cards */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Larger title font */
+    font-weight: bold;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem; /* Readable body font */
+    color: #555; /* Subtle text color */
+    line-height: 1.5; /* Comfortable spacing */
+}
+
+/* Button Styling */
+.card .btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight enlarge on hover */
+}
+
+/* Card Deck (Flexbox Layout) */
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Even spacing between cards */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-heading {
+        font-size: 1.5rem; /* Smaller heading for mobile */
+    }
+
+    .card {
+        margin: 10px; /* Adjust spacing for smaller screens */
+    }
+
+    .btn-primary {
+        font-size: 12px; /* Smaller button text for mobile */
+        padding: 8px 15px; /* Adjust padding */
+    }
+}
+
+/* General Button Styling */
+.btn-primary {
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%; /* Ensure buttons take full width if needed */
+}
+
+/* Hover Effect */
+.btn-primary:hover {
+    transform: scale(1.05); /* Slight enlarge on hover */
+}
+
+/* Responsive Design for Buttons */
+@media (max-width: 768px) {
+    .btn-primary {
+        font-size: 12px; /* Smaller text for mobile */
+        padding: 8px 10px; /* Adjust padding for smaller screens */
+        width: auto; /* Prevent full-width buttons if not required */
+    }
+
+    .main_nav .btn {
+        margin-bottom: 10px; /* Ensure spacing between buttons */
+        width: 100%; /* Buttons take full width on small screens */
+    }
+}
+
+/* Fix Button Overlap in Cards */
+.card .btn-primary {
+    margin-top: auto; /* Ensure buttons stay at the bottom of the card */
+    display: block; /* Buttons always appear properly in card layout */
+    text-align: center; /* Center-align button text */
+}
+
+
+/* Card Layout Tweaks for Mobile */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%; /* Cards take full width on mobile */
+        margin-bottom: 20px; /* Add spacing between cards */
+    }
+
+    .card-deck {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        gap: 15px; /* Adjust spacing between cards */
+    }
+}
+
+
+/* Meal */
+
+/* workers */
+/* General Styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+  /* Title Section */
+  .title {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.title img {
+    width: 100%; /* Full width */
+    height: 50%; /* Maintain aspect ratio */
+    display: block; /* Remove any gaps below the image */
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    background: linear-gradient(90deg, #0056b3, #007bff);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    color: white;
+    font-size: 16px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #d1ecf1;
+    text-decoration: underline;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: white !important;
+}
+.carousel-item img {
+    height: 400px; /* Adjust the height as needed */
+    object-fit:contain; /* Ensures the image scales properly while maintaining aspect ratio */
+}
+
+
+/* Sidebar Styling */
+.main_nav {
+    background-color: #f8f9fa;
+    border-right: 2px solid #e0e0e0;
+    padding: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.main_nav .btn {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.main_nav .btn:hover {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Content Section */
+.section-heading {
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    font-weight: bold; /* Bold text */
+    color: #007bff; /* Match the primary theme color */
+    text-transform: uppercase; /* Optional: Make the text uppercase */
+    border-bottom: 3px solid #007bff; /* Underline for emphasis */
+    padding-bottom: 10px; /* Spacing below the text */
+    margin-bottom: 20px; /* Spacing before the cards start */
+}
+
+.content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    min-height: calc(100vh - 70px); /* Adjust for title/navbar height */
+}
+
+.content .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 15px;
+    max-height: 380px; /* Restrict card height */
+}
+
+.content .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.content .card img {
+    height: 150px; /* Adjusted image height */
+    object-fit: contain;
+}
+
+.content .card-body {
+    overflow: hidden;
+}
+
+.content .card-title {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.content .btn-primary {
+    /*  */
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-sidebar-btn {
+    width: 200px; /* Fixed width for consistency */
+    text-align: center; /* Center-align text */
+    font-weight: bold; /* Make text bolder */
+    border-radius: 10px; /* Smooth corners */
+    transition: all 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover effect for buttons */
+.custom-sidebar-btn:hover {
+    background-color: #007bff;
+    color: white;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main_nav {
+        display: none; /* Hide sidebar on smaller devices */
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .navbar .nav-link {
+        font-size: 14px;
+        margin: 0 5px;
+    }
+}
+
+
+/* new css */
+/* worker_lits/worker_location */
+
+/* Reset and Base Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light background */
+    color: #212529; /* Neutral text color */
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+  }
+  
+  header img {
+    width: 24px;
+    height: 24px;
+  }
+.rounded-circle{
+    border: #0056b3;
+    border-radius:none;
+}
+.rounded-circle{
+    border-radius:none;
+}
+.img-fluid{
+    max-width:50%;
+}
+  
+  
+  header .fw-bold {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  header .form-control {
+    border-radius: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Banner Styles */
+  .alert {
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #d1e7dd; /* Subtle green background */
+    color: #0f5132;
+    border: none;
+    border-radius: 0;
+  }
+  
+  /* Main Section */
+  main {
+    padding: 20px;
+  }
+  
+  .services .row {
+    margin-top: 10px;
+  }
+  
+  .service-item img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: transform 0.3s ease; /* Animation on hover */
+  }
+  
+  .service-item img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  .service-item p {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 600;
+  }
+  
+  /* Badge Styles */
+  .badge {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 15px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  footer img {
+    width: 30px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  footer img:hover {
+    transform: scale(1.2);
+  }
+  
+  footer p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #555;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 576px) {
+    header .form-control {
+      width: 100%;
+    }
+  
+    .services .row {
+      gap: 10px;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    footer a {
+      margin-bottom: 10px;
+    }
+  }
+  
+
+/* profile */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title Section */
+.title h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+/* Profile Section */
+section.text-center img {
+    border: 5px solid #007bff;
+    padding: 5px;
+}
+
+section.text-center h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+section.text-center p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card-text {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Buttons and Links */
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ddd !important;
+}
+
+/* Header Search Bar */
+header input[type="text"] {
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+header input[type="text"]:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+    outline: none;
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h3 {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Row Gap */
+.row.g-3 > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer (optional) */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

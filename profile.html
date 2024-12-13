@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="title">
+    <img src="AVSAR Poster-03.png" alt="">
+</div>
+  <div class="nav">
+    <!-- Bootstrap Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Avsar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gov.html">Government</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="worker_location.html">Un-organized Workers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="meal_location.html">Meal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://eshram.gov.in/indexmain">E-Sharam.Gov</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="subcription.html">Subscription</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Logout</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container my-4">
+    <!-- Profile Section -->
+    <section class="text-center mb-4">
+      <img src="profile-user.png" alt="Profile Photo" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+      <h2 id="profile-username">Username: </h2>
+      <p id="profile-email">Email: example@example.com</p>
+      <p id="profile-phone">Phone: +123 456 7890</p>
+    </section>
+
+    <!-- Previous Services -->
+    <section>
+      <h3>Previous Services</h3>
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Worker Assistance</h5>
+              <p class="card-text">Used on: 25th Oct 2023</p>
+              <p class="card-text">Details: Assisted in connecting with skilled labor for construction work in Mumbai.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Meal Services</h5>
+              <p class="card-text">Used on: 10th Nov 2023</p>
+              <p class="card-text">Details: Accessed free meal services at Marine Drive Community Center.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Government Documentation</h5>
+              <p class="card-text">Used on: 15th Dec 2023</p>
+              <p class="card-text">Details: Supported in updating Aadhaar card details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Function to display user profile
+    function displayUserProfile() {
+      const username = localStorage.getItem('username') || 'Guest';
+      document.getElementById('profile-username').textContent = `Username: ${username}`;
+      
+      // Optional: Customize email or other details based on the username
+      if (username === 'dharmikkhuman') {
+        document.getElementById('profile-email').textContent = 'Email: dharmikkhuman@example.com';
+        document.getElementById('profile-phone').textContent = 'Phone: +123 456 7890';
+      } else if (username === 'vikas') {
+        document.getElementById('profile-email').textContent = 'Email: vikas@example.com';
+        document.getElementById('profile-phone').textContent = 'Phone: +987 654 3210';
+      }
+    }
+
+    // Call the function on page load
+    window.onload = displayUserProfile;
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
